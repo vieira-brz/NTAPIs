@@ -7,11 +7,14 @@
 
 2. Instale as dependências:
     ```bash
-    npm i typescript -D
-    npm i express
-    npm i jest -D
-    npm i supertest
-    npm i @types/express -D
+    npm i --save-dev typescript         # TypeScript for type checking
+    npm i express                       # Express framework for building the API
+    npm i --save-dev @types/express     # Type definitions for Express
+    npm i jest                          # Jest for testing
+    npm i --save-dev ts-jest            # TypeScript preprocessor for Jest
+    npm i --save-dev @types/jest        # Type definitions for Jest
+    npm i supertest                     # Supertest for HTTP assertions
+    npm i --save-dev @types/supertest   # Type definitions for Supertest
     ```
 
 ### Configuração do Projeto
@@ -39,7 +42,8 @@
     ```json
     "scripts": {
       "build": "tsc",
-      "dev": "tsc-watch --onSuccess 'node dist/server.js'"
+      "dev": "tsc-watch --onSuccess 'node dist/server.js'",
+      "test": "jest"
     }
     ```
 
@@ -52,3 +56,15 @@
     ```bash
     npm run dev
     ```
+
+### Configuração dos Testes
+
+1. Crie o arquivo `jest.config.json`:
+    ```json
+    {
+      "preset": "ts-jest",
+      "testEnvironment": "node"
+    }
+    ```
+
+2. Crie o arquivo `app.spec.ts` na pasta `src`.

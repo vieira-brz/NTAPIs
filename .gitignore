@@ -1,0 +1,27 @@
+# Node.js
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Diretórios de build e de distribuição
+dist/
+build/
+
+# Arquivos de configuração de ambiente
+.env
+
+# Diretórios de cache e temporários
+.cache/
+tmp/
+temp/
+
+# Arquivos de IDE
+.idea/
+.vscode/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
