@@ -1,3 +1,6 @@
+// Importing the app module
 import app from "./app"
 
-app.listen(3000, () => console.log('Running...'))
+// Starting the server on port 3000
+// Listening on port 3000 and logging 'Running...' when the server starts
+app.listen(3000, () => console.log('Running...')) 
