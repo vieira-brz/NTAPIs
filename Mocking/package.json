@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest"
+  },
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
